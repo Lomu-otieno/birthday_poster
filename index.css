@@ -5,6 +5,11 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
+li {
+    font-size: larger;
+    list-style-type: none;
+}
+
 .birthday-poster {
     position: relative;
     width: 100%;
@@ -38,11 +43,11 @@ body {
 
 .center-image {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 510px;
+    height: 510px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #fff;
+    border: 1px solid #fff;
     box-shadow: 0 0 20px rgba(255, 100, 0, 0.5);
     z-index: 1;
 }
@@ -52,14 +57,22 @@ body {
     top: 20px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     color: #aaa;
 }
 
-.highlight-points {
+.highlight-points-two {
     position: absolute;
     top: 80%;
     right: 30px;
+    text-align: left;
+}
+
+.highlight-points {
+    font-size: larger;
+    position: absolute;
+    top: 80%;
+    left: 15px;
     text-align: left;
 }
 
@@ -71,6 +84,11 @@ body {
 }
 
 .highlight-points li::before {
+    content: "• ";
+    color: #FF6A00;
+}
+
+.highlight-points-two li::before {
     content: "• ";
     color: #FF6A00;
 }
@@ -92,7 +110,10 @@ body {
 
 .birthday-message h1 {
     font-size: 4rem;
-    font-family: 'Brush Script MT', cursive;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     margin: 0.5rem 0;
     color: #fff;
     text-shadow: 2px 2px 8px rgba(255, 106, 0, 0.7);
@@ -103,7 +124,7 @@ body {
     background: rgba(255, 255, 255, 0.5);
     padding: 6px 14px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
     margin-top: 10px;
     color: #000;
     font-weight: bold;
