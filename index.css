@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.birthday-poster {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.pinimg.com/736x/15/fa/15/15fa15d7b4d5d08cdc2af71b97d5cf33.jpg') no-repeat;
+    background-position: center;
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Glow / neon light behind image */
+
+.glow-background {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 100, 0, 0.8), transparent 50%);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(50px);
+    z-index: 0;
+}
+
+.center-image {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(255, 100, 0, 0.5);
+    z-index: 1;
+}
+
+.top-tagline {
+    position: absolute;
+    top: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.highlight-points {
+    position: absolute;
+    top: 80%;
+    right: 30px;
+    text-align: left;
+}
+
+.highlight-points ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.highlight-points li::before {
+    content: "• ";
+    color: #FF6A00;
+}
+
+.birthday-message {
+    position: relative;
+    margin-top: 1rem;
+    z-index: 2;
+}
+
+.small-text {
+    font-size: 1.2rem;
+    background: #FF6A00;
+    padding: 4px 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.birthday-message h1 {
+    font-size: 4rem;
+    font-family: 'Brush Script MT', cursive;
+    margin: 0.5rem 0;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(255, 106, 0, 0.7);
+}
+
+.name-tag {
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    margin-top: 10px;
+    color: #000;
+    font-weight: bold;
+}
